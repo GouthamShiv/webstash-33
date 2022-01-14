@@ -27,18 +27,19 @@ body {
 .note {
     width: 400px;
     height: 400px;
+    color: black;
     margin: 30px 20px;
     border-radius: 5px;
-    background-color: black;
+    background-color: lightslategray;
     box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 .note .tools {
     display: flex;
     padding: 0.5rem;
-    border-radius: 5px;
     justify-content: flex-end;
-    background-color: slategray;
+    border-radius: 5px 5px 0 0;
+    background-color: black;
 }
 
 .note .tools button {
@@ -48,6 +49,18 @@ body {
     font-size: 1rem;
     margin-left: 0.5rem;
     background-color: transparent;
+}
+
+.note .tools button.edit {
+    color: lightskyblue;
+}
+
+.note .tools button.save {
+    color: lightgreen;
+}
+
+.note .tools button.delete {
+    color: tomato;
 }
 
 .note .tools button:focus {
@@ -60,7 +73,14 @@ body {
     resize: none;
     outline: none;
     padding: 10px;
+    color: black;
     font-size: 1.2rem;
+    border-radius: 5px;
     font-family: inherit;
+    background-color: lightslategray;
     height: calc(100% - 40px);
+}
+
+.main {
+    padding: 20px;
 }
